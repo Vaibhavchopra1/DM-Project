@@ -31,26 +31,33 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 - **Labelling**: Columns of datasets are properly labelled as can be seen in the notebook.
 
 #### Descriptive Statistics
-- **Summary Statistics**: Generating basic statistics (mean, median, mode, etc.) for numerical data to get a sense of data distribution.
+- **Summary Statistics**: Generating basic statistics (mean, median, mode, etc.) for numerical data to get a sense of data distribution. Along with 
 - **Textual Analysis**: Applying natural language processing tools to plot summaries to extract features that describe the narrative elements of the movies. Also, help us find the Top 20 commonly used words as seen in the figure below.
   ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/0bfa4c4e-2a1a-4dd6-aa3a-dd046efc5721)
   
 #### Cleaning and Preprocessing
 - **Normalization**: Standardizing data formats, such as dates and categorical data, to ensure consistency across the dataset.
-- **Missing Values**: Handling missing data through imputation or exclusion, depending on the nature and impact of the missing data on the analysis. Have replaced some columns with mean/median/ mode and have dropped some column values where they were missing.
+- **Missing Values**: Handling missing data through imputation or exclusion, depending on the nature and impact of the missing data on the analysis. The first calculating the number of missing values. Now treating the missing values by replacing them with some columns with mean/median/ mode and have dropped some column values where they were missing.
 - **Textual Data Transformation**: Converting plot summaries and other textual data into a format suitable for machine learning and network analysis, using techniques such as tokenization and vectorization.
 -**Converting into Readable data**: Converted the Movie countries, Movie languages and Movie genres columns' data values into a readable format to make it easy for visualization. Example: Converted {"/m/03rk0": "India"} into "India".
   
-### 2. Actors' Career Network Analysis
+### Approach for Data Analysis Questions
+**Objective**: Write the python code to answer all the Data Analysis Questions
+**Note**:Refer the code in Jupyter Notebook
 
+####1. Actors' Career Network Analysis
 **Objective**: Analyze the structure and implications of actor collaboration networks within the film industry.
 
-#### Graph Network Analysis
+##### Graph Network & Stastical Analysis
 - **Network Construction**: Building a network graph where nodes represent actors and edges represent collaborations between them.
 - **Centrality Measures**: Calculating metrics such as degree centrality and betweenness centrality to identify influential actors within the network.
-
-#### Statistical Analysis
 - **Correlation Analysis**: Assessing relationships between an actor’s network centrality and their career longevity, genre diversity, and recognition.
+  
+##### Questions Analysis
+- **Question 1.1**: How do actors navigate their roles within collaborative networks across different genres?
+- **Analysis 1.1**: The degree centrality metric shows actors with the most frequent collaborations in their networks. By observing the genres associated with their collaborations, we can identify how these actors navigate their roles within different genres.
+- **Question 1.2**: How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
+- **Analysis 1.2**: This metric can be correlated with an actor's longevity and recognition in the industry. Actors with high exposure to multiple genres often demonstrate versatility and flexibility.
 
 ### 3. Genre Evolution and Archetype Analysis
 
@@ -68,7 +75,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 **Objective**: Develop models that predict box office revenue based on movie metadata and narrative features.
 
 #### Feature Engineering
-- **Integration of Features**: Combining various metadata elements (e.g., actor influence, director popularity, budget) with extracted features from plot summaries to form a comprehensive feature set for modeling.
+- **Integration of Features**: Combining various metadata elements (e.g., actor influence, director popularity, budget) with extracted features from plot summaries to form a comprehensive feature set for modelling.
 
 #### Model Training and Improvement
 - **Machine Learning Models**: Training regression models and random forests to predict box office success based on the developed features.
