@@ -10,7 +10,6 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 1. **Actors' Career Networks:**  
    - How do actors navigate their roles within collaborative networks across different genres?  
    - How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?  
-   - What clustering patterns emerge based on demographics like age, gender, and nationality?
 
 2. **Genre Evolution and Cultural Trends:**  
    - How have genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones?  
@@ -20,22 +19,63 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 3. **Predictive Box Office Models:**  
    - What metadata features are the strongest predictors of box office revenue?  
    - How accurately can machine learning models estimate box office revenue by combining metadata with plot summaries?  
-   - Does adding production and marketing cost data improve predictive accuracy?
 
-**Methods and Results:**  
-1. **Data Handling and Exploratory Analysis:**  
-   - **Cleaning and Preprocessing:** Normalize formats, handle missing values, and transform textual data for analysis.  
-   - **Descriptive Statistics:** Summary statistics for metadata and exploration of plot summary distributions using natural language processing.
+**Method:**  
+### 1. Data Handling and Exploratory Analysis
 
-2. **Actors' Career Network Analysis:**  
-   - **Graph Network Analysis:** Apply graph theory to identify collaborative patterns, central actors, and demographic clustering.  
-   - **Statistical Analysis:** Examine the correlations between network position, demographic data, and genre diversification.
+**Objective**: Prepare the dataset for analysis, ensuring data quality and usability for subsequent analyses.
 
-3. **Genre Evolution and Archetype Analysis:**  
-   - **Time Series Analysis:** Explore historical trends in genre popularity using time series and clustering.  
-   - **Natural Language Processing (NLP):** Analyze plot summaries to identify genre archetypes and sub-genres.
+#### Labelling and Data Identification
+- **Data Collection**: Data is sourced from the CMU Movie Summary Corpus, which includes metadata and plot summaries for a variety of films.
+- **Dataset Selection**:I have used character metadata, movie metadata and plot summaries datasets for this analysis.
+- **Labelling**: Columns of datasets are properly labelled as can be seen in the notebook.
 
-4. **Predictive Box Office Model:**  
-   - **Feature Engineering:** Combine metadata with NLP features from plot summaries.  
-   - **Model Training:** Train machine learning models (regression, random forests) to predict box office revenue.  
-   - **Model Improvement:** Integrate additional production and marketing datasets for higher accuracy.
+#### Descriptive Statistics
+- **Summary Statistics**: Generating basic statistics (mean, median, mode, etc.) for numerical data to get a sense of data distribution.
+- **Textual Analysis**: Applying natural language processing tools to plot summaries to extract features that describe the narrative elements of the movies. Also, help us find the Top 20 commonly used words as seen in the figure below.
+  ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/0bfa4c4e-2a1a-4dd6-aa3a-dd046efc5721)
+  
+#### Cleaning and Preprocessing
+- **Normalization**: Standardizing data formats, such as dates and categorical data, to ensure consistency across the dataset.
+- **Missing Values**: Handling missing data through imputation or exclusion, depending on the nature and impact of the missing data on the analysis. Have replaced some columns with mean/median/ mode and have dropped some column values where they were missing.
+- **Textual Data Transformation**: Converting plot summaries and other textual data into a format suitable for machine learning and network analysis, using techniques such as tokenization and vectorization.
+-**Converting into Readable data**: Converted the Movie countries, Movie languages and Movie genres columns' data values into a readable format to make it easy for visualization. Example: Converted {"/m/03rk0": "India"} into "India".
+  
+### 2. Actors' Career Network Analysis
+
+**Objective**: Analyze the structure and implications of actor collaboration networks within the film industry.
+
+#### Graph Network Analysis
+- **Network Construction**: Building a network graph where nodes represent actors and edges represent collaborations between them.
+- **Centrality Measures**: Calculating metrics such as degree centrality and betweenness centrality to identify influential actors within the network.
+
+#### Statistical Analysis
+- **Correlation Analysis**: Assessing relationships between an actor’s network centrality and their career longevity, genre diversity, and recognition.
+
+### 3. Genre Evolution and Archetype Analysis
+
+**Objective**: Explore how film genres have evolved over time and identify distinct genre archetypes.
+
+#### Time Series Analysis
+- **Trend Analysis**: Using time series data to identify trends in genre popularity over decades, correlating these trends with historical and cultural developments.
+
+#### Natural Language Processing (NLP)
+- **Clustering**: Applying clustering techniques to plot summaries to discover underlying genre archetypes and thematic elements common within genres.
+- **Sub-genre Identification**: Using advanced NLP techniques to parse complex narrative structures and identify emerging sub-genres within traditional genres.
+
+### 4. Predictive Box Office Model
+
+**Objective**: Develop models that predict box office revenue based on movie metadata and narrative features.
+
+#### Feature Engineering
+- **Integration of Features**: Combining various metadata elements (e.g., actor influence, director popularity, budget) with extracted features from plot summaries to form a comprehensive feature set for modeling.
+
+#### Model Training and Improvement
+- **Machine Learning Models**: Training regression models and random forests to predict box office success based on the developed features.
+- **Model Optimization**: Enhancing model accuracy by incorporating additional data such as production costs and marketing spend, and tuning model parameters based on performance metrics.
+
+### Results and Discussion
+
+The project will involve interpreting the results from each of these analyses to draw conclusions about actor networking effects, genre evolution, and the predictability of box office performance. Each analysis will help answer the posed research questions by providing insights into the dynamics of film production and reception, the strategic positioning of actors within the industry, and the financial success of films.
+
+By implementing this methodology, the project aims to provide a holistic understanding of the complex interplay between actor networks, genre development, and market success in the film industry.
