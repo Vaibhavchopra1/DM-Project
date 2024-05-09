@@ -20,7 +20,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
    - What metadata features are the strongest predictors of box office revenue?  
    - How accurately can machine learning models estimate box office revenue by combining metadata with plot summaries?  
 
-**Method:**  
+**Method & Result:**  
 ### 1. Data Handling and Exploratory Analysis
 
 **Objective**: Prepare the dataset for analysis, ensuring data quality and usability for subsequent analyses.
