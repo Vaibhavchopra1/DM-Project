@@ -41,11 +41,10 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 - **Textual Data Transformation**: Converting plot summaries and other textual data into a format suitable for machine learning and network analysis, using techniques such as tokenization and vectorization.
 -**Converting into Readable data**: Converted the Movie countries, Movie languages and Movie genres columns' data values into a readable format to make it easy for visualization. Example: Converted {"/m/03rk0": "India"} into "India".
   
-### Approach for Data Analysis Questions
-**Objective**: Write the python code to answer all the Data Analysis Questions
+### 2. Approach for Data Analysis Questions
 **Note**:Refer the code in Jupyter Notebook
 
-####1. Actors' Career Network Analysis
+#### Q1. Actors' Career Network Analysis
 **Objective**: Analyze the structure and implications of actor collaboration networks within the film industry.
 
 ##### Graph Network & Stastical Analysis
@@ -56,9 +55,13 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 ##### Questions Analysis
 - **Question 1.1**: How do actors navigate their roles within collaborative networks across different genres?
 - **Analysis 1.1**: The degree centrality metric shows actors with the most frequent collaborations in their networks. By observing the genres associated with their collaborations, we can identify how these actors navigate their roles within different genres.
+- **Output 1.1**:Top 10 actors by degree centrality: [('Samuel L. Jackson', 0.09638168427793788), ('Robert De Niro', 0.07845020813320525), ('John Goodman', 0.06724303554274735), ('Christopher Walken', 0.06468139609349983), ('Stanley Tucci', 0.06372078130003202), ('Liam Neeson', 0.0627601665065642), ('Morgan Freeman', 0.06243996157540826), ('Ben Stiller', 0.062119756644252316), ('Matt Damon', 0.06147934678194043), ('Tom Wilkinson', 0.05891770733269292)]
+- **Result 1.1**:
 - **Question 1.2**: How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
 - **Analysis 1.2**: This metric can be correlated with an actor's longevity and recognition in the industry. Actors with high exposure to multiple genres often demonstrate versatility and flexibility.
-
+- **Output 1.2**:Top 10 actors with highest genre diversity: [('Samuel L. Jackson', 76), ('Robert De Niro', 63), ('John Goodman', 63), ('Christopher Walken', 58), ('Amitabh Bachchan', 55), ('Morgan Freeman', 52), ('Randy Quaid', 50), ('Danny DeVito', 49), ('Brian Cox', 48), ('Danny Trejo', 48)]
+- **Result 1.2**:
+- 
 ### 3. Genre Evolution and Archetype Analysis
 
 **Objective**: Explore how film genres have evolved over time and identify distinct genre archetypes.
