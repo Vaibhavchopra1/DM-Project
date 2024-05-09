@@ -53,22 +53,22 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 - **Correlation Analysis**: Assessing relationships between an actor’s network centrality and their career longevity, genre diversity, and recognition.
   
 ##### Questions Analysis
-- **Question 1**: Which actors navigate their roles within collaborative networks across different genres?
+**Question 1**: Which actors navigate their roles within collaborative networks across different genres?
 - **Analysis**: The degree centrality metric shows actors with the most frequent collaborations in their networks. By observing the genres associated with their collaborations, we can identify how these actors navigate their roles within different genres.
 - **Output**:
      Top 10 actors by degree centrality:
   [('Samuel L. Jackson', 0.09638168427793788), ('Robert De Niro', 0.07845020813320525), ('John Goodman', 0.06724303554274735), ('Christopher Walken', 0.06468139609349983), ('Stanley Tucci', 0.06372078130003202), ('Liam Neeson', 0.0627601665065642), ('Morgan Freeman', 0.06243996157540826), ('Ben Stiller', 0.062119756644252316), ('Matt Damon', 0.06147934678194043), ('Tom Wilkinson', 0.05891770733269292)]
 - **Result**:From this analysis, we can infer that actors with high degree centrality are likely navigating their roles within a wide array of genres. Their ability to connect with diverse actors suggests versatility and adaptability in their careers. For instance, Samuel L. Jackson appearing in genres ranging from action to drama indicates his broad appeal and ability to fit into various narrative contexts. This versatility not only enhances an actor’s visibility but may also contribute to career longevity and success.
 
-- **Question 2**: How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
+**Question 2**: How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
 - **Analysis**: This metric can be correlated with an actor's longevity and recognition in the industry. Actors with high exposure to multiple genres often demonstrate versatility and flexibility.
 - **Output**:
-     Top 10 actors with highest genre diversity:
+     Top 10 actors with the highest diversity:
   [('Samuel L. Jackson', 76), ('Robert De Niro', 63), ('John Goodman', 63), ('Christopher Walken', 58), ('Amitabh Bachchan', 55), ('Morgan Freeman', 52), ('Randy Quaid', 50), ('Danny DeVito', 49), ('Brian Cox', 48), ('Danny Trejo', 48)]
-- **Result**: Actors with high centrality and genre diversity, such as Samuel L. Jackson and Robert De Niro, demonstrate that a strong network position can lead to broader opportunities in diverse film genres. This diversity can contribute to an actor’s recognition in the industry, making them more appealing to casting directors looking for versatile talent. Additionally, this versatility and recognition are likely contributors to their career longevity, allowing them to maintain relevance in the film industry over long periods.
+- **Result**: Actors with high centrality and genre diversity, such as Samuel L. Jackson and Robert De Niro, demonstrate that a strong network position can lead to broader opportunities in diverse film genres. We are all well aware of the names of these actors listed above which also implies how diverse and well-known these actors are. We have seen their career last for a long period as well as get recognized by many. This diversity can contribute to an actor’s recognition in the industry, making them more appealing to casting directors looking for versatile talent. Additionally, this versatility and recognition are likely contributors to their career longevity, allowing them to maintain relevance in the film industry over long periods.
 
-##### Conclusion:
-Both degree centrality and genre diversity are important indicators of an actor's ability to navigate and succeed in the film industry. The high correlation between an actor’s network position and their genre diversity not only highlights their adaptability and skill but also suggests potential strategies for aspiring actors aiming for long-term success and recognition in the industry.
+##### Conclusion on Actors' Career Network Analysis:
+Both degree centrality and genre diversity are important indicators of an actor's ability to navigate and succeed in the film industry. The high correlation between an actor’s network position and their diversity not only highlights their adaptability and skill but also suggests potential strategies for aspiring actors aiming for long-term success and recognition in the industry.
 
 ### 3. Genre Evolution and Archetype Analysis
 
