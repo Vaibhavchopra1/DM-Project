@@ -8,7 +8,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 
 **Data Analysis Questions:**  
 1. **Actors' Career Networks:**  
-   - How do actors navigate their roles within collaborative networks across different genres?  
+   - Which actors navigate their roles within collaborative networks across different genres?  
    - How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?  
 
 2. **Genre Evolution and Cultural Trends:**  
@@ -53,7 +53,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 - **Correlation Analysis**: Assessing relationships between an actor’s network centrality and their career longevity, genre diversity, and recognition.
   
 ##### Questions Analysis
-- **Question 1**: How do actors navigate their roles within collaborative networks across different genres?
+- **Question 1**: Which actors navigate their roles within collaborative networks across different genres?
 - **Analysis**: The degree centrality metric shows actors with the most frequent collaborations in their networks. By observing the genres associated with their collaborations, we can identify how these actors navigate their roles within different genres.
 - **Output**:
      Top 10 actors by degree centrality:
