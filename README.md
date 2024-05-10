@@ -1,4 +1,4 @@
-### DM Mini-Project 2
+<img width="220" alt="image" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/d8d300b0-9c99-4660-97da-2fd1a0a33ca9">![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/cb09402d-cece-4322-9cf2-660390ec1c16)### DM Mini-Project 2
 
 **Project Title:**  
 Charting Unconventional Cinematic Pathways: Advanced Network Analysis of Actor Personas and Genre Evolution in the CMU Movie Corpus
@@ -7,16 +7,16 @@ Charting Unconventional Cinematic Pathways: Advanced Network Analysis of Actor P
 This project explores the CMU Movie Summary Corpus through advanced network analysis, machine learning, and natural language processing to uncover unconventional patterns in actor personas and genre evolution. It aims to unravel the intricate networks that shape actor careers, identify genre archetypes and evolution trends, and create machine learning models to predict box office revenue based on a combination of metadata and plot summaries. By leveraging graph theory, clustering, and time series analysis, this study will reveal the hidden cinematic pathways that underpin the evolution of the film industry.
 
 **Data Analysis Questions:** 
-Q1. Which actors navigate their roles within collaborative networks across different genres?
-Q2. How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
-Q3. How have genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
-Q4. How do the Genre popularity trends shift over time for the best trend genre?
-Q5. Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres?  
-Q6. What role do regional and linguistic differences play in shaping genre preferences?
-Q7. What movie metadata features are the strongest predictors of box office revenue?  
-Q8.How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
+- Which actors navigate their roles within collaborative networks across different genres?
+- How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
+- How have top 10 genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
+- How do the Genre popularity trends shift over time for the best trend genre?
+- Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres?  
+- What role do regional and linguistic differences play in shaping genre preferences?
+- What movie metadata features are the strongest predictors of box office revenue?  
+- How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
 
-Additional Dataset used: Oscar Dataset(used for Q9 only)
+Additional Dataset used: Oscar Dataset(used for Q8 only)
 
 **Method & Result:**  
 ### 1. Data Handling and Exploratory Analysis
@@ -38,57 +38,57 @@ Additional Dataset used: Oscar Dataset(used for Q9 only)
 - **Missing Values**: Handling missing data through imputation or exclusion, depending on the nature and impact of the missing data on the analysis. The first calculating the number of missing values. Now treating the missing values by replacing them with some columns with mean/median/ mode and have dropped some column values where they were missing.
 - **Textual Data Transformation**: Converting plot summaries and other textual data into a format suitable for machine learning and network analysis, using techniques such as tokenization and vectorization.
 -**Converting into Readable data**: Converted the Movie countries, Movie languages and Movie genres columns' data values into a readable format to make it easy for visualization. Example: Converted {"/m/03rk0": "India"} into "India".
-  
+
 ### 2. Approach for Data Analysis Questions
-**Note**: Refer the code in Jupyter Notebook
+**Note**: Refer to the code in Jupyter Notebook
 
-#### Actors' Career Network Analysis
-**Objective**: Analyze the structure and implications of actor collaboration networks within the film industry.
-
-##### Graph Network & Stastical Analysis
-- **Network Construction**: Building a network graph where nodes represent actors and edges represent collaborations between them.
-- **Centrality Measures**: Calculating metrics such as degree centrality and betweenness centrality to identify influential actors within the network.
-- **Correlation Analysis**: Assessing relationships between an actor’s network centrality and their career longevity, genre diversity, and recognition.
-  
-##### Questions Analysis
 **Question 1**: Which actors navigate their roles within collaborative networks across different genres?
-- **Analysis**: The degree centrality metric shows actors with the most frequent collaborations in their networks. By observing the genres associated with their collaborations, we can identify how these actors navigate their roles within different genres.
+- **Approach**: Building a network graph where nodes represent actors and edges represent collaborations between them.Calculating metrics such as degree centrality and betweenness centrality to identify influential actors within the network.
 - **Output**:
      Top 10 actors by degree centrality:
   [('Samuel L. Jackson', 0.09638168427793788), ('Robert De Niro', 0.07845020813320525), ('John Goodman', 0.06724303554274735), ('Christopher Walken', 0.06468139609349983), ('Stanley Tucci', 0.06372078130003202), ('Liam Neeson', 0.0627601665065642), ('Morgan Freeman', 0.06243996157540826), ('Ben Stiller', 0.062119756644252316), ('Matt Damon', 0.06147934678194043), ('Tom Wilkinson', 0.05891770733269292)]
 - **Result**:From this analysis, we can infer that actors with high degree centrality are likely navigating their roles within a wide array of genres. Their ability to connect with diverse actors suggests versatility and adaptability in their careers. For instance, Samuel L. Jackson appearing in genres ranging from action to drama indicates his broad appeal and ability to fit into various narrative contexts. This versatility not only enhances an actor’s visibility but may also contribute to career longevity and success.
 
 **Question 2**: How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
-- **Analysis**: This metric can be correlated with an actor's longevity and recognition in the industry. Actors with high exposure to multiple genres often demonstrate versatility and flexibility.
+- **Approach**: Using Question 1, the graph and the degree centrality and betweenness centrality matrix calculated to then do correlational analysis where in assessing relationships between an actor’s network centrality and their career longevity, genre diversity, and recognition.
 - **Output**:
      Top 10 actors with the highest diversity:
   [('Samuel L. Jackson', 76), ('Robert De Niro', 63), ('John Goodman', 63), ('Christopher Walken', 58), ('Amitabh Bachchan', 55), ('Morgan Freeman', 52), ('Randy Quaid', 50), ('Danny DeVito', 49), ('Brian Cox', 48), ('Danny Trejo', 48)]
 - **Result**: Actors with high centrality and genre diversity, such as Samuel L. Jackson and Robert De Niro, demonstrate that a strong network position can lead to broader opportunities in diverse film genres. We are all well aware of the names of these actors listed above which also implies how diverse and well-known these actors are. We have seen their career last for a long period as well as get recognized by many. This diversity can contribute to an actor’s recognition in the industry, making them more appealing to casting directors looking for versatile talent. Additionally, this versatility and recognition are likely contributors to their career longevity, allowing them to maintain relevance in the film industry over long periods.
 
-### 3. Genre Evolution and Archetype Analysis
 
-**Objective**: Explore how film genres have evolved over time and identify distinct genre archetypes.
+**Question 3**: How have the top 10 genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
+- **Approach**: Using time series data to identify trends in genre popularity over decades.
+- **Output**:
+ ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/c5aee902-edce-4e77-b733-dadf42c37fe6)
+- **Result**:
 
-#### Time Series Analysis
-- **Trend Analysis**: Using time series data to identify trends in genre popularity over decades, correlating these trends with historical and cultural developments.
+**Question 4**: How do  the best trend genre(Drama) popularity trends shift over time?
+- **Approach**: Using time series data to identify the best trends(Drama) in genre popularity over decades after that performing seasonal decomposition to analyze its trend, seasonality, and residuals.
+- **Output**:
+![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/11e937a3-2d36-4143-9edc-5ef7031a6814)
+- **Result**:
 
-#### Natural Language Processing (NLP)
-- **Clustering**: Applying clustering techniques to plot summaries to discover underlying genre archetypes and thematic elements common within genres.
-- **Sub-genre Identification**: Using advanced NLP techniques to parse complex narrative structures and identify emerging sub-genres within traditional genres.
+**Question 5**: Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres? (Only the top 10 genres considered)
+- **Approach**:Applying clustering techniques to plot summaries to discover underlying genre archetypes and thematic elements common within genres. Using advanced NLP techniques to parse complex narrative structures and identify emerging sub-genres within traditional genres.
+- **Output**:
+![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/1ff23a91-397f-43c0-81a6-67756652e80a)
+- **Result**:
 
-### 4. Predictive Box Office Model
 
-**Objective**: Develop models that predict box office revenue based on movie metadata and narrative features.
+**Question 6**: What role do regional and linguistic differences play in shaping genre preferences?(Top 5 countries and Top 10 genres are considered)
+- **Approach**: 
+- **Output**:
+![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/a1ccd638-fa27-4620-b3a0-3c5ed8789c00)
+- **Result**:
 
-#### Feature Engineering
-- **Integration of Features**: Combining various metadata elements (e.g., actor influence, director popularity, budget) with extracted features from plot summaries to form a comprehensive feature set for modelling.
+  **Question 7**: What movie metadata features are the strongest predictors of box office revenue?
+- **Approach**: 
+- **Output**:
+<img width="220" alt="image" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/e0a3e5b5-7c1e-450f-8aca-d48002ca8c4b">
+- **Result**:
 
-#### Model Training and Improvement
-- **Machine Learning Models**: Training regression models and random forests to predict box office success based on the developed features.
-- **Model Optimization**: Enhancing model accuracy by incorporating additional data such as production costs and marketing spend, and tuning model parameters based on performance metrics.
-
-### Results and Discussion
-
-The project will involve interpreting the results from each of these analyses to draw conclusions about actor networking effects, genre evolution, and the predictability of box office performance. Each analysis will help answer the posed research questions by providing insights into the dynamics of film production and reception, the strategic positioning of actors within the industry, and the financial success of films.
-
-By implementing this methodology, the project aims to provide a holistic understanding of the complex interplay between actor networks, genre development, and market success in the film industry.
+**Question 8**: How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
+- **Approach**: 
+- **Output**:
+- **Result**:
