@@ -92,6 +92,9 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 - **Result**:
 
 **Question 8**: How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance?
-- **Approach**: 
+- **Approach**: The approach involves first loading the Oscar and CMU movie datasets, filtering the Oscar data to identify relevant winners. A ColumnTransformer is used to preprocess both numerical and categorical features. After training the model on the training set to predict box office revenue, the predictions on the test set are evaluated with Mean Squared Error (MSE) and R-squared metrics to measure the model's accuracy.
 - **Output**:
-- **Result**:
+Mean Squared Error: 5662417742259266.00
+R-squared: 0.77
+- **Result**:Winning or being nominated for an Oscar has a significant impact on a movie's subsequent box office revenue. This conclusion is based on a regression model that explains 77% of the variability in box office revenue, as reflected by the R-squared value. By incorporating features like genre, runtime, and whether a movie won an Oscar, the model demonstrates that winning or even just being nominated contributes positively to a film's financial success. Although the predictions have room for improvement due to a relatively high mean squared error, the model's strong performance indicates that winning an Oscar generally leads to a substantial boost in revenue, highlighting the considerable value of such recognition in the film industry.
+
