@@ -1,4 +1,4 @@
-<img width="220" alt="image" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/d8d300b0-9c99-4660-97da-2fd1a0a33ca9">![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/cb09402d-cece-4322-9cf2-660390ec1c16)### DM Mini-Project 2
+### DM Mini-Project 2
 
 **Project Title:**  
 Charting Unconventional Cinematic Pathways: Advanced Network Analysis of Actor Personas and Genre Evolution in the CMU Movie Corpus
@@ -85,7 +85,7 @@ Additional Dataset used: Oscar Dataset(used for Q8 only)
   **Question 7**: What movie metadata features are the strongest predictors of box office revenue?
 - **Approach**: 
 - **Output**:
-<img width="220" alt="image" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/e0a3e5b5-7c1e-450f-8aca-d48002ca8c4b">
+<img width="220" alt="Screenshot 2024-05-10 131348" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/fea7dcb2-3a70-4206-b8fe-9cc6464aa32c">
 - **Result**:
 
 **Question 8**: How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
