@@ -1,22 +1,22 @@
 ### DM Mini-Project 2
 
 **Project Title:**  
-Charting Unconventional Cinematic Pathways: Advanced Network Analysis of Actor Personas and Genre Evolution in the CMU Movie Corpus
+Charting Unconventional Cinematic Pathways: Advanced Analysis of Actor Personas and Genre Evolution in CMU Movie & Oscars dataset
 
 **Abstract:**  
-This project explores the CMU Movie Summary Corpus through advanced network analysis, machine learning, and natural language processing to uncover unconventional patterns in actor personas and genre evolution. It aims to unravel the intricate networks that shape actor careers, identify genre archetypes and evolution trends, and create machine learning models to predict box office revenue based on a combination of metadata and plot summaries. By leveraging graph theory, clustering, and time series analysis, this study will reveal the hidden cinematic pathways that underpin the evolution of the film industry.
+This project explores the CMU Movie Summary Corpus through advanced network analysis, machine learning, and natural language processing to uncover unconventional patterns in actor personas and genre evolution. It aims to unravel the intricate networks that shape actor careers, identify genre archetypes and evolution trends, and find the features which impact the box office revenue most. By leveraging graph theory, clustering, and time series analysis, this study will reveal the hidden cinematic pathways that underpin the evolution of the film industry. Using the Oscars dataset to see how actors affect the movie's financial performance and more.
 
 **Data Analysis Questions:** 
 - Which actors navigate their roles within collaborative networks across different genres?
 - How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
-- How have top 10 genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
-- How do the Genre popularity trends shift over time for the best trend genre?
-- Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres?  
-- What role do regional and linguistic differences play in shaping genre preferences?
+- How have the top 10 genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
+- How does the best trend genre(Drama) popularity trends shift over time?
+- Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres? (Only the top 10 genres considered)
+- What role do regional and linguistic differences play in shaping genre preferences?(Top 5 countries and Top 10 genres are considered)
 - What movie metadata features are the strongest predictors of box office revenue?  
-- How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
-
-Additional Dataset used: Oscar Dataset(used for Q8 only)
+- How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance?
+  
+**Additional Dataset used**: Oscar Dataset(used for Q8 only)
 
 **Method & Result:**  
 ### 1. Data Handling and Exploratory Analysis
@@ -63,7 +63,7 @@ Additional Dataset used: Oscar Dataset(used for Q8 only)
  ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/c5aee902-edce-4e77-b733-dadf42c37fe6)
 - **Result**:
 
-**Question 4**: How do  the best trend genre(Drama) popularity trends shift over time?
+**Question 4**: How does the best trend genre(Drama) popularity trends shift over time?
 - **Approach**: Using time series data to identify the best trends(Drama) in genre popularity over decades after that performing seasonal decomposition to analyze its trend, seasonality, and residuals.
 - **Output**:
 ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/11e937a3-2d36-4143-9edc-5ef7031a6814)
@@ -88,7 +88,7 @@ Additional Dataset used: Oscar Dataset(used for Q8 only)
 <img width="220" alt="Screenshot 2024-05-10 131348" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/fea7dcb2-3a70-4206-b8fe-9cc6464aa32c">
 - **Result**:
 
-**Question 8**: How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
+**Question 8**: How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance?
 - **Approach**: 
 - **Output**:
 - **Result**:
