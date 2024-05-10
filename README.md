@@ -85,7 +85,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
   **Question 7**: What movie metadata features are the strongest predictors of box office revenue?
 - **Approach**: 
 - **Output**:
-- 
+  
   <img width="220" alt="Screenshot 2024-05-10 131348" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/fea7dcb2-3a70-4206-b8fe-9cc6464aa32c">
 
 - **Result**:
