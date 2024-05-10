@@ -66,6 +66,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 **Question 4**: How does the best trend genre(Drama) popularity trends shift over time?
 - **Approach**: Using time series data to identify the best trends(Drama) in genre popularity over decades after that performing seasonal decomposition to analyze its trend, seasonality, and residuals.
 - **Output**:
+  
 ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/11e937a3-2d36-4143-9edc-5ef7031a6814)
 - **Result**:
 
