@@ -4,7 +4,7 @@
 Charting Unconventional Cinematic Pathways: Advanced Analysis of Actor Personas and Genre Evolution in CMU Movie & Oscars dataset
 
 **Abstract:**  
-This project explores the CMU Movie Summary Corpus through advanced network analysis, machine learning, and natural language processing to uncover unconventional patterns in actor personas and genre evolution. It aims to unravel the intricate networks that shape actor careers, identify genre archetypes and evolution trends, and find the features which impact the box office revenue most. By leveraging graph theory, clustering, and time series analysis, this study will reveal the hidden cinematic pathways that underpin the evolution of the film industry. Using the Oscars dataset to see how actors affect the movie's financial performance and more.
+This project explores the CMU Movie Summary Corpus through advanced network analysis, machine learning, and natural language processing to uncover unconventional patterns in actor personas and genre evolution. It aims to unravel the intricate networks that shape actor careers, identify genre archetypes and evolution trends, and find the features which impact the box office revenue most. By leveraging graph theory, clustering, and time series analysis, this study will reveal the hidden cinematic pathways that underpin the evolution of the film industry. Using the Oscars dataset to see how actors affect the movie's financial performance.
 
 **Data Analysis Questions:** 
 - Which actors navigate their roles within collaborative networks across different genres?
@@ -14,7 +14,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 - Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres? (Only the top 10 genres considered)
 - What role do regional and linguistic differences play in shaping genre preferences?(Top 5 countries and Top 10 genres are considered)
 - What movie metadata features are the strongest predictors of box office revenue?  
-- How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance?
+- To what extent does winning or being nominated for an Oscar affect the subsequent box office revenue of a movie?
   
 **Additional Dataset used**: Oscar Dataset(used for Q8 only)
 
@@ -39,7 +39,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 - **Textual Data Transformation**: Converting plot summaries and other textual data into a format suitable for machine learning and network analysis, using techniques such as tokenization and vectorization.
 -**Converting into Readable data**: Converted the Movie countries, Movie languages and Movie genres columns' data values into a readable format to make it easy for visualization. Example: Converted {"/m/03rk0": "India"} into "India".
 
-### 2. Approach for Data Analysis Questions
+### 2. Data Analysis Questions
 **Note**: Refer to the code in Jupyter Notebook
 
 **Question 1**: Which actors navigate their roles within collaborative networks across different genres?
@@ -91,7 +91,7 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
 
 - **Result**:
 
-**Question 8**: How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance?
+**Question 8**: To what extent does winning or being nominated for an Oscar affect the subsequent box office revenue of a movie?
 - **Approach**: The approach involves first loading the Oscar and CMU movie datasets, filtering the Oscar data to identify relevant winners. A ColumnTransformer is used to preprocess both numerical and categorical features. After training the model on the training set to predict box office revenue, the predictions on the test set are evaluated with Mean Squared Error (MSE) and R-squared metrics to measure the model's accuracy.
 - **Output**:
 Mean Squared Error: 5662417742259266.00
