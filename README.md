@@ -12,11 +12,10 @@ This project aims to uncover hidden patterns within the film industry by explori
 - How have the top 10 genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
 - How does the best trend genre(Drama) popularity trends shift over time?
 - Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres? (Only the top 10 genres considered)
-- What role do regional and linguistic differences play in shaping genre preferences?(Top 5 countries and Top 10 genres are considered)
 - What movie metadata features are the strongest predictors of box office revenue?  
 - To what extent does winning or being nominated for an Oscar affect the subsequent box office revenue of a movie?
   
-**Additional Dataset used**: Oscar Dataset(used for Q8 only)
+**Additional Dataset used**: Oscar Dataset(used for Q7 only)
 
 **Method & Result:**  
 ### 1. Data Handling and Exploratory Analysis
@@ -58,17 +57,17 @@ This project aims to uncover hidden patterns within the film industry by explori
 
 
 **Question 3**: How have the top 10 genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
-- **Approach**: Using time series data to identify trends in genre popularity over decades.
+- **Approach**: Using time series data to identify trends in genre popularity over decades.The approach involves extracting the year from movie release dates, filtering the dataset to the top 10 genres, and then grouping by year and genre to analyze trends. This data is visualized in a line graph to highlight changes in genre popularity over time.
 - **Output**:
  ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/c5aee902-edce-4e77-b733-dadf42c37fe6)
-- **Result**:
+- **Result**:From the visual analysis, it is evident that the drama genre exhibits the most robust and consistent growth trend among the top genres over the observed period. This upward trajectory is particularly pronounced from the mid-1990s onwards, peaking around the early 2000s. The popularity of the drama genre can be attributed to its versatility and ability to resonate with universal human experiences, making it adaptable to various cultural contexts and historical moments. The significant rise in the number of films across most genres in the late 1990s correlates with technological advancements in digital filmmaking and distribution, which democratized film production and expanded global reach. This era also coincides with significant cultural shifts that influenced film content, reflecting a broader diversity of stories and themes in cinema. Overall, the drama genre stands out for its enduring appeal and dynamic adaptation to changing societal trends, securing its place as the genre with the best trend in this analysis.
 
 **Question 4**: How does the best trend genre(Drama) popularity trends shift over time?
-- **Approach**: Using time series data to identify the best trends(Drama) in genre popularity over decades after that performing seasonal decomposition to analyze its trend, seasonality, and residuals.
+- **Approach**: Using time series data to identify the best trends(Drama) in genre popularity over decades after that performing seasonal decomposition to analyze its trend, seasonality, and residuals.The approach involves extracting the yearly trend of drama genre popularity using time series decomposition. This technique decomposes the time series data into three components: trend, seasonality, and residuals, providing a detailed analysis of the underlying patterns.
 - **Output**:
   
 ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/11e937a3-2d36-4143-9edc-5ef7031a6814)
-- **Result**:
+- **Result**:The time series decomposition of the drama genre popularity from 1930 to 2010 shows a clear and consistent trend of increasing popularity, particularly from the 1980s onwards, with a notable spike in the late 1990s and 2000s. The trend component reflects a sustained growth in the genre's appeal, culminating in significant peaks, which likely correlates with periods of increased production and global audience interest. The seasonal component is minimal, indicating that the popularity of the drama genre does not fluctuate widely across different times of the year. Lastly, the residuals are quite stable and low, suggesting that the model fits well and most variations in drama genre popularity are well explained by the trend component, without much unexplained noise.
 
 **Question 5**: Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres? (Only the top 10 genres considered)
 - **Approach**:Applying clustering techniques to plot summaries to discover underlying genre archetypes and thematic elements common within genres. Using advanced NLP techniques to parse complex narrative structures and identify emerging sub-genres within traditional genres.
@@ -76,14 +75,7 @@ This project aims to uncover hidden patterns within the film industry by explori
 ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/1ff23a91-397f-43c0-81a6-67756652e80a)
 - **Result**:
 
-
-**Question 6**: What role do regional and linguistic differences play in shaping genre preferences?(Top 5 countries and Top 10 genres are considered)
-- **Approach**: 
-- **Output**:
-![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/a1ccd638-fa27-4620-b3a0-3c5ed8789c00)
-- **Result**:
-
-  **Question 7**: What movie metadata features are the strongest predictors of box office revenue?
+  **Question 6**: What movie metadata features are the strongest predictors of box office revenue?
 - **Approach**: 
 - **Output**:
   
@@ -91,7 +83,7 @@ This project aims to uncover hidden patterns within the film industry by explori
 
 - **Result**:
 
-**Question 8**: To what extent does winning or being nominated for an Oscar affect the subsequent box office revenue of a movie?
+**Question 7**: To what extent does winning or being nominated for an Oscar affect the subsequent box office revenue of a movie?
 - **Approach**: The approach involves first loading the Oscar and CMU movie datasets, filtering the Oscar data to identify relevant winners. A ColumnTransformer is used to preprocess both numerical and categorical features. After training the model on the training set to predict box office revenue, the predictions on the test set are evaluated with Mean Squared Error (MSE) and R-squared metrics to measure the model's accuracy.
 - **Output**:
 Mean Squared Error: 5662417742259266.00
