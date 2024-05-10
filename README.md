@@ -6,19 +6,18 @@ Charting Unconventional Cinematic Pathways: Advanced Network Analysis of Actor P
 **Abstract:**  
 This project explores the CMU Movie Summary Corpus through advanced network analysis, machine learning, and natural language processing to uncover unconventional patterns in actor personas and genre evolution. It aims to unravel the intricate networks that shape actor careers, identify genre archetypes and evolution trends, and create machine learning models to predict box office revenue based on a combination of metadata and plot summaries. By leveraging graph theory, clustering, and time series analysis, this study will reveal the hidden cinematic pathways that underpin the evolution of the film industry.
 
-**Data Analysis Questions:**  
-1. **Actors' Career Networks:**  
-   - Which actors navigate their roles within collaborative networks across different genres?  
-   - How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?  
+**Data Analysis Questions:** 
+Q1. Which actors navigate their roles within collaborative networks across different genres?
+Q2. How does an actor's network position impact their exposure to diverse genres, career longevity, and recognition?
+Q3. How have genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones? Which genre has the best trend?
+Q4. How do the Genre popularity trends shift over time for the best trend genre?
+Q5. Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres?  
+Q6. What role do regional and linguistic differences play in shaping genre preferences?
+Q7. What movie metadata features are the strongest predictors of box office revenue?  
+Q8.How accurately can machine learning models estimate box office revenue by combining metadata with plot summaries?  
+Q9.How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
 
-2. **Genre Evolution and Cultural Trends:**  
-   - How have genre popularity trends shifted over time, and how do these trends relate to historical and cultural milestones?  
-   - Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres?  
-   - What role do regional and linguistic differences play in shaping genre preferences?
-
-3. **Predictive Box Office Models:**  
-   - What metadata features are the strongest predictors of box office revenue?  
-   - How accurately can machine learning models estimate box office revenue by combining metadata with plot summaries?  
+Additional Dataset used: Oscar Dataset(used for Q9 only)
 
 **Method & Result:**  
 ### 1. Data Handling and Exploratory Analysis
@@ -66,9 +65,6 @@ This project explores the CMU Movie Summary Corpus through advanced network anal
      Top 10 actors with the highest diversity:
   [('Samuel L. Jackson', 76), ('Robert De Niro', 63), ('John Goodman', 63), ('Christopher Walken', 58), ('Amitabh Bachchan', 55), ('Morgan Freeman', 52), ('Randy Quaid', 50), ('Danny DeVito', 49), ('Brian Cox', 48), ('Danny Trejo', 48)]
 - **Result**: Actors with high centrality and genre diversity, such as Samuel L. Jackson and Robert De Niro, demonstrate that a strong network position can lead to broader opportunities in diverse film genres. We are all well aware of the names of these actors listed above which also implies how diverse and well-known these actors are. We have seen their career last for a long period as well as get recognized by many. This diversity can contribute to an actor’s recognition in the industry, making them more appealing to casting directors looking for versatile talent. Additionally, this versatility and recognition are likely contributors to their career longevity, allowing them to maintain relevance in the film industry over long periods.
-
-##### Conclusion on Actors' Career Network Analysis:
-Both degree centrality and genre diversity are important indicators of an actor's ability to navigate and succeed in the film industry. The high correlation between an actor’s network position and their diversity not only highlights their adaptability and skill but also suggests potential strategies for aspiring actors aiming for long-term success and recognition in the industry.
 
 ### 3. Genre Evolution and Archetype Analysis
 
