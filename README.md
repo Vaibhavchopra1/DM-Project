@@ -14,8 +14,7 @@ Q4. How do the Genre popularity trends shift over time for the best trend genre?
 Q5. Can we use clustering and natural language processing to uncover genre archetypes and their sub-genres?  
 Q6. What role do regional and linguistic differences play in shaping genre preferences?
 Q7. What movie metadata features are the strongest predictors of box office revenue?  
-Q8.How accurately can machine learning models estimate box office revenue by combining metadata with plot summaries?  
-Q9.How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
+Q8.How does the presence of Oscar-nominated actors and crew members influence a movie's financial performance and audience ratings?
 
 Additional Dataset used: Oscar Dataset(used for Q9 only)
 
