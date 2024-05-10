@@ -73,15 +73,17 @@ This project aims to uncover hidden patterns within the film industry by explori
 - **Approach**:Applying clustering techniques to plot summaries to discover underlying genre archetypes and thematic elements common within genres. Using advanced NLP techniques to parse complex narrative structures and identify emerging sub-genres within traditional genres.
 - **Output**:
 ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/1ff23a91-397f-43c0-81a6-67756652e80a)
-- **Result**:
+- **Result**:The heatmap visualization from clustering and TF-IDF vectorization of movie summaries shows clear distinctions and patterns in how different genres are grouped into clusters. Notably, genres such as "Romantic comedy, Romance Film, Comedy" and "Drama" form distinct clusters, indicating specific narrative structures or themes that are prevalent within these genres. For instance, the "Romantic comedy, Romance Film, Comedy" genre shows a high concentration in Cluster 5, suggesting a unique archetype associated with romantic and comedic elements.
+
+The results confirm that clustering and NLP can effectively uncover genre archetypes and their sub-genres. Each cluster represents a grouping of movies that share similar narrative elements, highlighting the utility of this method in exploring and understanding the underlying structures within film genres. This technique allows us to visualize and quantify the relationships between genres and their narrative compositions, providing a valuable tool for industry analysis and academic study in film genre classification.
 
   **Question 6**: What movie metadata features are the strongest predictors of box office revenue?
-- **Approach**: 
+- **Approach**: The approach involves encoding movie metadata features (movie runtime, genres, and countries) using one-hot encoding, followed by training an XGBoost regressor(Random Forest Regressor) to predict box office revenue. The importance of each feature is then aggregated and visualized to assess their predictive power.
 - **Output**:
   
-  <img width="220" alt="Screenshot 2024-05-10 131348" src="https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/fea7dcb2-3a70-4206-b8fe-9cc6464aa32c">
+ ![image](https://github.com/Vaibhavchopra1/DM-Project/assets/70208602/3bd49faa-e4a2-4bfa-8c79-5b66063eee33)
 
-- **Result**:
+- **Result**:The bar chart clearly demonstrates that "Movie genres" is the most influential predictor of box office revenue, significantly outweighing the other features like "Movie runtime" and "Movie countries." This suggests that the genre of a movie plays a crucial role in its financial success, likely because genre significantly influences audience appeal and marketing strategies. "Movie runtime" and "Movie countries" have much lower aggregate importance, indicating they have less impact on revenue prediction. This insight could be valuable for producers and marketers in prioritizing elements that might attract larger audiences and generate higher earnings.
 
 **Question 7**: To what extent does winning or being nominated for an Oscar affect the subsequent box office revenue of a movie?
 - **Approach**: The approach involves first loading the Oscar and CMU movie datasets, filtering the Oscar data to identify relevant winners. A ColumnTransformer is used to preprocess both numerical and categorical features. After training the model on the training set to predict box office revenue, the predictions on the test set are evaluated with Mean Squared Error (MSE) and R-squared metrics to measure the model's accuracy.
